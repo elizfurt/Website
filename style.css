@@ -1,0 +1,271 @@
+body {
+  background-color: whitesmoke;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&family=Exo+2:wght@400&family=Josefin+Sans:wght@600&family=Kanit:wght@500&family=Questrial&display=swap');
+
+/* Font Styling */
+h1 {
+    font-family: 'Questrial', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  height: 15%;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  padding: 5px;
+}
+
+.logo img {
+ 
+ width: 100%;
+ height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.navbar a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+.empty {
+  background-color: whitesmoke;
+  width: 90%;
+}
+
+.column {
+  background-color: white;
+  border-top: 2.5px solid black;
+  border-bottom: 2.5px solid black;
+  border-left: 2.5px solid black;
+  border-right: 2.5px solid black;
+}
+
+.column-top {
+  background-color: white;
+  border-top: 5px solid black;
+  border-bottom: 2.5px solid black;
+  border-left: 2.5px solid black;
+  border-right: 2.5px solid black;
+} 
+.column-end {
+  background-color: white;
+  border-top: 2.5px solid black;
+  border-bottom: 2.5px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+}
+
+.column-top-end {
+  background-color: white;
+  border-top: 5px solid black;
+  border-bottom: 2.5px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+}
+
+.column-bottom-end {
+  background-color: white;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+}
+
+.shapes {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+}
+
+.shape {
+ border: 5px solid black;
+}
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content:center;
+}
+
+.blue {
+  background-color:blue;
+}
+.yellow {
+  background-color: goldenrod;
+}
+.red {
+  background-color: red;
+}
+.white {
+  animation: shrink 6s ease-in 0s 1;
+  background-color: white;
+  border: 5px solid black;
+}
+
+.r1 h2 {
+  animation: appear 8s ease-in 0s 1;
+  color: black;
+}
+.r2 h2 {
+  animation: appear 6s ease-in 0s 1;
+  color: black;
+}
+.r3 h2 {
+  animation: appear 7s ease-in 0s 1;
+  color: black;
+}
+.r4 h2 {
+  animation: appear 8s ease-in 0s 1;
+  color: black;
+}
+
+.s1 {
+  animation: slideDown 2s alternate ease-in-out 1s 4;
+}
+.s2 {
+  animation: slideUp2 7s ease-in-out 2s 1;
+}
+.s3 {
+  animation: slideDown 2s alternate ease-in-out 0s 4;
+}
+.s4 {
+  animation: slideUp2 7s ease-in-out 1s 1;
+}
+.s5 {
+  animation: slideDown 2s alternate ease-in-out 2s 4;
+}
+.s6 {
+  animation: slideUp 1.5s alternate ease-in-out 0s 4;
+}
+
+@keyframes slideDown {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(75px); }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-75px); }
+}
+
+@keyframes slideUp2 {
+  0% { transform: translateY(0); }
+  16% { transform: translateY(-75px); }
+  33% { transform: translateY(0); }
+  50% {transform: translateY(-75px);}
+  66% { transform: translateY(0); }
+  83% { transform: translateY(75px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes shrink {
+  0% {border: 5px solid white;}
+  100% {border: 5px solid black;}
+}
+
+@keyframes appear {
+  0% {color: #FFFFFF;}
+  90% {color: #FFFFFF;}
+  100% {color: #000000;}
+}
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.card {
+  padding: 20px;
+  width: 800px;
+  background-color: white;
+  border: 5px solid black;
+}
+
+.column-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  line-height: 1px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+}
+
+.headshot {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        width: 175px;
+        height: 175px;
+        flex-wrap: wrap;
+        overflow: hidden;
+        border: 5px solid black;
+}
+
+.headshot img {
+  width: 110%
+}

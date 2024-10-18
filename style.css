@@ -19,6 +19,7 @@ h2 {
 h3 {
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
+    padding: 0px;
 }
 
 h4 {
@@ -39,16 +40,17 @@ p {
   width: 100%;
   height: 15%;
 }
+
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
+  width: 200px;
+  height: auto;
   padding: 5px;
 }
 
-.logo img {
- 
+.logo img { 
  width: 100%;
  height: 100%;
 }
@@ -268,4 +270,16 @@ p {
 
 .headshot img {
   width: 110%
+}
+
+.clear-btn {
+  background: #00000000;
+  border: 3px solid black;
+  text-transform: uppercase;
+}
+
+.clear-btn:hover {
+  background: red;
+  border: 3px solid black;
+  color: white;
 }

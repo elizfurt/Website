@@ -144,7 +144,7 @@ p {
   background-color: red;
 }
 .white {
-  animation: shrink 6s ease-in 0s 1;
+//  animation: shrink 6s ease-in 0s 1;
   background-color: white;
   border: 5px solid black;
 }
@@ -206,7 +206,7 @@ p {
 }
 
 @keyframes shrink {
-  0% {border: 5px solid white;}
+  0% {border: 5px solid black;}
   100% {border: 5px solid black;}
 }
 

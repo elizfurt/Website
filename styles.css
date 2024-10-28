@@ -330,15 +330,15 @@ p {
   border: 3px solid black;
 }
 
-#active1 {
+.active1 {
   background-color: red !important;
 }
 
-#active2 {
+.active2 {
   background-color: blue !important;
 }
 
-#active3 {
+.active3 {
   background-color: yellow !important;
 }
 

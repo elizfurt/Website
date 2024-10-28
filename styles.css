@@ -343,7 +343,7 @@ p {
 }
 
 .active h2 {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .inactive {

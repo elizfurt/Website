@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", () => {
+
 const job1 = document.getElementById("job1-bar");
 const job2 = document.getElementById("job2-bar");
 const job3 = document.getElementById("job3-bar");
@@ -51,3 +53,4 @@ function findActive(job) {
             break;
     }
 }
+});

@@ -10,26 +10,32 @@ const d1 = document.getElementById("job1");
 const d2 = document.getElementById("job2");
 const d3 = document.getElementById("job3");
 
-job1.addEventListener("click", (event) => {
+job1.addEventListener("click", () => {
     job1.classList.add("clicked1");
     findActive(1);
-
 });
 
-job2.addEventListener("click", (event) => {
+job2.addEventListener("click", () => {
     job2.classList.add("clicked2");
     findActive(2);
 });
 
-job3.addEventListener("click", (event) => {
+job3.addEventListener("click", () => {
     job3.classList.add("clicked3");
     findActive(3);
 });
 
 function findActive(job) {
-    activeItem = document.querySelector(".active");
-    activeItem.classList.remove("active");
-    activeItem.classList.add("inactive");
+    const activeItem = document.querySelector(".active");
+    
+    if (activeItem) {
+        activeItem.classList.remove("active");
+        activeItem.classList.add("inactive");
+    }
+
+    [title1, title2, title3].forEach(title => title.classList.remove("active"));
+    [d1, d2, d3].forEach(desc => desc.classList.add("inactive"));
+
     switch (job) {
         case 1:
             title1.classList.add("active");

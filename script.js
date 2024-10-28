@@ -29,11 +29,6 @@ job3.addEventListener("click", () => {
 
 function findActive(job) {
     const activeItem = document.querySelector(".active");
-    
-    if (activeItem) {
-        activeItem.classList.remove("active");
-        activeItem.classList.add("inactive");
-    }
 
     [title1, title2, title3].forEach(title => title.classList.remove("active"));
     [d1, d2, d3].forEach(desc => desc.classList.add("inactive"));

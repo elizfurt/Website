@@ -142,46 +142,72 @@ p {
 .red {
   background-color: red;
 }
-.white {
-  animation: shrink 6s ease-in 0s 1;
+
+.white1{
+  animation: shrink 1.5s ease-in 0s 1;
+  background-color: white;
+  border: 5px solid black;
+}
+.white2 {
+  animation: shrink 2.5s ease-in 0s 1;
+  background-color: white;
+  border: 5px solid black;
+}
+.white3 {
+  animation: shrink 2s ease-in 0s 1;
+  background-color: white;
+  border: 5px solid black;
+}
+.white4 {
+  animation: shrink 3s ease-in 0s 1;
+  background-color: white;
+  border: 5px solid black;
+}
+.white5 {
+  animation: shrink 1s ease-in 0s 1;
+  background-color: white;
+  border: 5px solid black;
+}
+.white6 {
+  animation: shrink 3.5s ease-in 0s 1;
   background-color: white;
   border: 5px solid black;
 }
 
 .r1 h2 {
-  animation: appear 8s ease-in 0s 1;
+  animation: appear 2.5s ease-in 0s 1;
   color: black;
 }
 .r2 h2 {
-  animation: appear 6s ease-in 0s 1;
+  animation: appear 2s ease-in 0s 1;
   color: black;
 }
 .r3 h2 {
-  animation: appear 7s ease-in 0s 1;
+  animation: appear 3s ease-in 0s 1;
   color: black;
 }
 .r4 h2 {
-  animation: appear 8s ease-in 0s 1;
+  animation: appear 1s ease-in 0s 1;
   color: black;
 }
 
 .s1 {
-  animation: slideDown 2s alternate ease-in-out 1s 2;
+  animation: slideDown 1s alternate ease-in-out .5s 2;
 }
 .s2 {
-  animation: slideUp2 4s ease-in-out 2s 1;
+  animation: slideUp2 3s ease-in-out 0s 1;
 }
 .s3 {
-  animation: slideDown 2s alternate ease-in-out 0s 2;
+  animation: slideDown 1s alternate ease-in-out 1s 2;
 }
 .s4 {
-  animation: slideUp2 4s ease-in-out 1s 1;
+  animation: slideUp2 3s ease-in-out .5s 1;
 }
 .s5 {
-  animation: slideDown 2s alternate ease-in-out 2s 2;
+  animation: slideDown 1s alternate ease-in-out 0s 2;
 }
 .s6 {
-  animation: slideUp 1.5s alternate ease-in-out 0s 2;
+  animation: slideUp2 3s alternate ease-in-out 1s 1;
 }
 
 @keyframes slideDown {
@@ -196,16 +222,15 @@ p {
 
 @keyframes slideUp2 {
   0% { transform: translateY(0); }
-  16% { transform: translateY(-75px); }
-  33% { transform: translateY(0); }
-  50% {transform: translateY(-75px);}
-  66% { transform: translateY(0); }
-  83% { transform: translateY(75px); }
+  25% { transform: translateY(-75px); }
+  50% { transform: translateY(0); }
+  75% {transform: translateY(75px);}
   100% { transform: translateY(0); }
 }
 
 @keyframes shrink {
   0% {border: 5px solid white;}
+  90% {border: 5px solid white;}
   100% {border: 5px solid black;}
 }
 
@@ -342,4 +367,3 @@ padding-bottom: 5px;
 .active-box {
   background-color: red;
 }
-

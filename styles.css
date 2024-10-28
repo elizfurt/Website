@@ -330,16 +330,20 @@ p {
   border: 3px solid black;
 }
 
-.active1 {
+.clicked1 {
   background-color: red !important;
 }
 
-.active2 {
+.clicked2 {
   background-color: blue !important;
 }
 
-.active3 {
+.clicked3 {
   background-color: yellow !important;
+}
+
+.active h2 {
+  font-weight: bold;
 }
 
 .inactive {

@@ -27,6 +27,21 @@ job3.addEventListener("click", () => {
     findActive(3);
 });
 
+title1.addEventListener("click", () => {
+    job1.classList.add("clicked1");
+    findActive(1);
+});
+
+title2.addEventListener("click", () => {
+    job2.classList.add("clicked2");
+    findActive(2);
+});
+
+title3.addEventListener("click", () => {
+    job3.classList.add("clicked3");
+    findActive(3);
+});
+
 function findActive(job) {
     const activeItem = document.querySelector(".active");
 

@@ -342,6 +342,11 @@ p {
   background-color: yellow !important;
 }
 
+.inactive {
+  display: none;
+}
+
+
 .col1-2 {
   display: flex;
   flex-direction: column;

@@ -390,4 +390,6 @@ padding-bottom: 5px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }

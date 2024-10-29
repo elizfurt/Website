@@ -379,7 +379,7 @@ padding-bottom: 5px;
 
 .box-card {
   margin-bottom:40px;
-  padding: 20px;
+  padding: 10px;
   width: 300px;
   background-color: white;
   border: 5px solid black; 
@@ -388,6 +388,6 @@ padding-bottom: 5px;
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
 }

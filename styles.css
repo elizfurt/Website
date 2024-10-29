@@ -376,3 +376,11 @@ padding-bottom: 5px;
 .active-box {
   background-color: red;
 }
+
+.box-card {
+  margin-bottom:40px;
+  padding: 20px;
+  width: 400px;
+  background-color: white;
+  border: 5px solid black; 
+}
